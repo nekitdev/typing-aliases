@@ -1,6 +1,6 @@
-"""Various type aliases.."""
+"""Various type aliases."""
 
-__description__ = "Various type aliases.."
+__description__ = "Various type aliases."
 __url__ = "https://github.com/nekitdev/typing-aliases"
 
 __title__ = "typing_aliases"

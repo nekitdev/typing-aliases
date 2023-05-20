@@ -8,7 +8,7 @@
 [![Documentation][Documentation Badge]][Documentation]
 [![Check][Check Badge]][Actions]
 
-> *Various type aliases..*
+> *Various type aliases.*
 
 ## Installing
 

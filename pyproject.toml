@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "typing-aliases"
 version = "1.1.0"
-description = "Various type aliases.."
+description = "Various type aliases."
 authors = ["nekitdev"]
 license = "MIT"
 

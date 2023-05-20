@@ -7,8 +7,6 @@
 
 [![Documentation][Documentation Badge]][Documentation]
 [![Check][Check Badge]][Actions]
-[![Test][Test Badge]][Actions]
-[![Coverage][Coverage Badge]][Coverage]
 
 > *Various type aliases..*
 
@@ -94,7 +92,6 @@ If you are interested in contributing to `typing-aliases`, make sure to take a l
 [License]: https://github.com/nekitdev/typing-aliases/blob/main/LICENSE
 
 [Package]: https://pypi.org/project/typing-aliases
-[Coverage]: https://codecov.io/gh/nekitdev/typing-aliases
 [Documentation]: https://nekitdev.github.io/typing-aliases
 
 [Discord Badge]: https://img.shields.io/badge/chat-discord-5865f2
@@ -104,5 +101,3 @@ If you are interested in contributing to `typing-aliases`, make sure to take a l
 
 [Documentation Badge]: https://github.com/nekitdev/typing-aliases/workflows/docs/badge.svg
 [Check Badge]: https://github.com/nekitdev/typing-aliases/workflows/check/badge.svg
-[Test Badge]: https://github.com/nekitdev/typing-aliases/workflows/test/badge.svg
-[Coverage Badge]: https://codecov.io/gh/nekitdev/typing-aliases/branch/main/graph/badge.svg

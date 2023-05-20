@@ -1,0 +1,5312 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Various type aliases.">
+      
+      
+        <meta name="author" content="nekitdev">
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../changelog/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.14">
+    
+    
+      
+        <title>Reference - typing-aliases</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="light-blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#reference" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="typing-aliases" class="md-header__button md-logo" aria-label="typing-aliases" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            typing-aliases
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Reference
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="light-blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6zm0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4zM7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="light-blue" data-md-color-accent="deep-purple"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/nekitdev/typing-aliases" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nekitdev/typing-aliases
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="typing-aliases" class="md-nav__button md-logo" aria-label="typing-aliases" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    typing-aliases
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/nekitdev/typing-aliases" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nekitdev/typing-aliases
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Index
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Reference
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Reference
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing" class="md-nav__link">
+    typing_aliases.typing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyType" class="md-nav__link">
+    AnyType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.EmptyTuple" class="md-nav__link">
+    EmptyTuple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple1" class="md-nav__link">
+    Tuple1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple2" class="md-nav__link">
+    Tuple2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple3" class="md-nav__link">
+    Tuple3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple4" class="md-nav__link">
+    Tuple4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple5" class="md-nav__link">
+    Tuple5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple6" class="md-nav__link">
+    Tuple6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple7" class="md-nav__link">
+    Tuple7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple8" class="md-nav__link">
+    Tuple8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Pair" class="md-nav__link">
+    Pair
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.DynamicTuple" class="md-nav__link">
+    DynamicTuple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyTuple" class="md-nav__link">
+    AnyTuple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyError" class="md-nav__link">
+    AnyError
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyErrorType" class="md-nav__link">
+    AnyErrorType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.NormalError" class="md-nav__link">
+    NormalError
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.NormalErrorType" class="md-nav__link">
+    NormalErrorType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyErrorTypes" class="md-nav__link">
+    AnyErrorTypes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.NormalErrorTypes" class="md-nav__link">
+    NormalErrorTypes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyContextManager" class="md-nav__link">
+    AnyContextManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.SimpleContextManager" class="md-nav__link">
+    SimpleContextManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyAsyncContextManager" class="md-nav__link">
+    AnyAsyncContextManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.SimpleAsyncContextManager" class="md-nav__link">
+    SimpleAsyncContextManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.DynamicCallable" class="md-nav__link">
+    DynamicCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyCallable" class="md-nav__link">
+    AnyCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Nullary" class="md-nav__link">
+    Nullary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Unary" class="md-nav__link">
+    Unary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Binary" class="md-nav__link">
+    Binary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Ternary" class="md-nav__link">
+    Ternary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Quaternary" class="md-nav__link">
+    Quaternary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Identity" class="md-nav__link">
+    Identity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Parse" class="md-nav__link">
+    Parse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Inspect" class="md-nav__link">
+    Inspect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.ForEach" class="md-nav__link">
+    ForEach
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Validate" class="md-nav__link">
+    Validate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Predicate" class="md-nav__link">
+    Predicate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.GenericPredicate" class="md-nav__link">
+    GenericPredicate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Compare" class="md-nav__link">
+    Compare
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackNullary" class="md-nav__link">
+    UnpackNullary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackUnary" class="md-nav__link">
+    UnpackUnary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackBinary" class="md-nav__link">
+    UnpackBinary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackTernary" class="md-nav__link">
+    UnpackTernary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackQuaternary" class="md-nav__link">
+    UnpackQuaternary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Decorator" class="md-nav__link">
+    Decorator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.DecoratorIdentity" class="md-nav__link">
+    DecoratorIdentity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.TypeDecorator" class="md-nav__link">
+    TypeDecorator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.TypeDecoratorIdentity" class="md-nav__link">
+    TypeDecoratorIdentity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncCallable" class="md-nav__link">
+    AsyncCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.DynamicAsyncCallable" class="md-nav__link">
+    DynamicAsyncCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyAsyncCallable" class="md-nav__link">
+    AnyAsyncCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncNullary" class="md-nav__link">
+    AsyncNullary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncUnary" class="md-nav__link">
+    AsyncUnary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncBinary" class="md-nav__link">
+    AsyncBinary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncTernary" class="md-nav__link">
+    AsyncTernary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncQuaternary" class="md-nav__link">
+    AsyncQuaternary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncIdentity" class="md-nav__link">
+    AsyncIdentity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncParse" class="md-nav__link">
+    AsyncParse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncInspect" class="md-nav__link">
+    AsyncInspect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncForEach" class="md-nav__link">
+    AsyncForEach
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncValidate" class="md-nav__link">
+    AsyncValidate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncPredicate" class="md-nav__link">
+    AsyncPredicate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncGenericPredicate" class="md-nav__link">
+    AsyncGenericPredicate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncCompare" class="md-nav__link">
+    AsyncCompare
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyIterable" class="md-nav__link">
+    AnyIterable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyIterator" class="md-nav__link">
+    AnyIterator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Selectors" class="md-nav__link">
+    Selectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncSelectors" class="md-nav__link">
+    AsyncSelectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnySelectors" class="md-nav__link">
+    AnySelectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.RecursiveIterable" class="md-nav__link">
+    RecursiveIterable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.RecursiveAsyncIterable" class="md-nav__link">
+    RecursiveAsyncIterable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.RecursiveAnyIterable" class="md-nav__link">
+    RecursiveAnyIterable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Pairs" class="md-nav__link">
+    Pairs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.StringDict" class="md-nav__link">
+    StringDict
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.StringMapping" class="md-nav__link">
+    StringMapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Namespace" class="md-nav__link">
+    Namespace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Headers" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoDict" class="md-nav__link">
+    IntoDict
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoMapping" class="md-nav__link">
+    IntoMapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoStringDict" class="md-nav__link">
+    IntoStringDict
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoStringMapping" class="md-nav__link">
+    IntoStringMapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoAttributes" class="md-nav__link">
+    IntoAttributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoNamespace" class="md-nav__link">
+    IntoNamespace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoParameters" class="md-nav__link">
+    IntoParameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoHeaders" class="md-nav__link">
+    IntoHeaders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoPath" class="md-nav__link">
+    IntoPath
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Primitive" class="md-nav__link">
+    Primitive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Payload" class="md-nav__link">
+    Payload
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_async_iterable" class="md-nav__link">
+    is_async_iterable()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_iterable" class="md-nav__link">
+    is_iterable()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_async_iterator" class="md-nav__link">
+    is_async_iterator()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_iterator" class="md-nav__link">
+    is_iterator()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_none" class="md-nav__link">
+    is_none()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_not_none" class="md-nav__link">
+    is_not_none()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_int" class="md-nav__link">
+    is_int()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_float" class="md-nav__link">
+    is_float()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_bytes" class="md-nav__link">
+    is_bytes()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_string" class="md-nav__link">
+    is_string()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_slice" class="md-nav__link">
+    is_slice()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_range" class="md-nav__link">
+    is_range()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_true" class="md-nav__link">
+    is_true()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_false" class="md-nav__link">
+    is_false()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_bool" class="md-nav__link">
+    is_bool()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_same_type" class="md-nav__link">
+    is_same_type()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_same_or_sub_type" class="md-nav__link">
+    is_same_or_sub_type()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../changelog/" class="md-nav__link">
+        Changelog
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../security/" class="md-nav__link">
+        Security
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../code_of_conduct/" class="md-nav__link">
+        Code of Conduct
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contributing/" class="md-nav__link">
+        Contributing
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing" class="md-nav__link">
+    typing_aliases.typing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyType" class="md-nav__link">
+    AnyType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.EmptyTuple" class="md-nav__link">
+    EmptyTuple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple1" class="md-nav__link">
+    Tuple1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple2" class="md-nav__link">
+    Tuple2
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple3" class="md-nav__link">
+    Tuple3
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple4" class="md-nav__link">
+    Tuple4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple5" class="md-nav__link">
+    Tuple5
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple6" class="md-nav__link">
+    Tuple6
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple7" class="md-nav__link">
+    Tuple7
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Tuple8" class="md-nav__link">
+    Tuple8
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Pair" class="md-nav__link">
+    Pair
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.DynamicTuple" class="md-nav__link">
+    DynamicTuple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyTuple" class="md-nav__link">
+    AnyTuple
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyError" class="md-nav__link">
+    AnyError
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyErrorType" class="md-nav__link">
+    AnyErrorType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.NormalError" class="md-nav__link">
+    NormalError
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.NormalErrorType" class="md-nav__link">
+    NormalErrorType
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyErrorTypes" class="md-nav__link">
+    AnyErrorTypes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.NormalErrorTypes" class="md-nav__link">
+    NormalErrorTypes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyContextManager" class="md-nav__link">
+    AnyContextManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.SimpleContextManager" class="md-nav__link">
+    SimpleContextManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyAsyncContextManager" class="md-nav__link">
+    AnyAsyncContextManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.SimpleAsyncContextManager" class="md-nav__link">
+    SimpleAsyncContextManager
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.DynamicCallable" class="md-nav__link">
+    DynamicCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyCallable" class="md-nav__link">
+    AnyCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Nullary" class="md-nav__link">
+    Nullary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Unary" class="md-nav__link">
+    Unary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Binary" class="md-nav__link">
+    Binary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Ternary" class="md-nav__link">
+    Ternary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Quaternary" class="md-nav__link">
+    Quaternary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Identity" class="md-nav__link">
+    Identity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Parse" class="md-nav__link">
+    Parse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Inspect" class="md-nav__link">
+    Inspect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.ForEach" class="md-nav__link">
+    ForEach
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Validate" class="md-nav__link">
+    Validate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Predicate" class="md-nav__link">
+    Predicate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.GenericPredicate" class="md-nav__link">
+    GenericPredicate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Compare" class="md-nav__link">
+    Compare
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackNullary" class="md-nav__link">
+    UnpackNullary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackUnary" class="md-nav__link">
+    UnpackUnary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackBinary" class="md-nav__link">
+    UnpackBinary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackTernary" class="md-nav__link">
+    UnpackTernary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.UnpackQuaternary" class="md-nav__link">
+    UnpackQuaternary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Decorator" class="md-nav__link">
+    Decorator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.DecoratorIdentity" class="md-nav__link">
+    DecoratorIdentity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.TypeDecorator" class="md-nav__link">
+    TypeDecorator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.TypeDecoratorIdentity" class="md-nav__link">
+    TypeDecoratorIdentity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncCallable" class="md-nav__link">
+    AsyncCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.DynamicAsyncCallable" class="md-nav__link">
+    DynamicAsyncCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyAsyncCallable" class="md-nav__link">
+    AnyAsyncCallable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncNullary" class="md-nav__link">
+    AsyncNullary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncUnary" class="md-nav__link">
+    AsyncUnary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncBinary" class="md-nav__link">
+    AsyncBinary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncTernary" class="md-nav__link">
+    AsyncTernary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncQuaternary" class="md-nav__link">
+    AsyncQuaternary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncIdentity" class="md-nav__link">
+    AsyncIdentity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncParse" class="md-nav__link">
+    AsyncParse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncInspect" class="md-nav__link">
+    AsyncInspect
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncForEach" class="md-nav__link">
+    AsyncForEach
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncValidate" class="md-nav__link">
+    AsyncValidate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncPredicate" class="md-nav__link">
+    AsyncPredicate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncGenericPredicate" class="md-nav__link">
+    AsyncGenericPredicate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncCompare" class="md-nav__link">
+    AsyncCompare
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyIterable" class="md-nav__link">
+    AnyIterable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnyIterator" class="md-nav__link">
+    AnyIterator
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Selectors" class="md-nav__link">
+    Selectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AsyncSelectors" class="md-nav__link">
+    AsyncSelectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.AnySelectors" class="md-nav__link">
+    AnySelectors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.RecursiveIterable" class="md-nav__link">
+    RecursiveIterable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.RecursiveAsyncIterable" class="md-nav__link">
+    RecursiveAsyncIterable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.RecursiveAnyIterable" class="md-nav__link">
+    RecursiveAnyIterable
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Pairs" class="md-nav__link">
+    Pairs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.StringDict" class="md-nav__link">
+    StringDict
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.StringMapping" class="md-nav__link">
+    StringMapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Namespace" class="md-nav__link">
+    Namespace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Parameters" class="md-nav__link">
+    Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Headers" class="md-nav__link">
+    Headers
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoDict" class="md-nav__link">
+    IntoDict
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoMapping" class="md-nav__link">
+    IntoMapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoStringDict" class="md-nav__link">
+    IntoStringDict
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoStringMapping" class="md-nav__link">
+    IntoStringMapping
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoAttributes" class="md-nav__link">
+    IntoAttributes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoNamespace" class="md-nav__link">
+    IntoNamespace
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoParameters" class="md-nav__link">
+    IntoParameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoHeaders" class="md-nav__link">
+    IntoHeaders
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.IntoPath" class="md-nav__link">
+    IntoPath
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Primitive" class="md-nav__link">
+    Primitive
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.Payload" class="md-nav__link">
+    Payload
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_async_iterable" class="md-nav__link">
+    is_async_iterable()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_iterable" class="md-nav__link">
+    is_iterable()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_async_iterator" class="md-nav__link">
+    is_async_iterator()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_iterator" class="md-nav__link">
+    is_iterator()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_none" class="md-nav__link">
+    is_none()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_not_none" class="md-nav__link">
+    is_not_none()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_int" class="md-nav__link">
+    is_int()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_float" class="md-nav__link">
+    is_float()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_bytes" class="md-nav__link">
+    is_bytes()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_string" class="md-nav__link">
+    is_string()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_slice" class="md-nav__link">
+    is_slice()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_range" class="md-nav__link">
+    is_range()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_true" class="md-nav__link">
+    is_true()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_false" class="md-nav__link">
+    is_false()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_bool" class="md-nav__link">
+    is_bool()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_same_type" class="md-nav__link">
+    is_same_type()
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typing_aliases.typing.is_same_or_sub_type" class="md-nav__link">
+    is_same_or_sub_type()
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="reference">Reference</h1>
+
+
+<div class="doc doc-object doc-module">
+
+
+<a id="typing_aliases.typing"></a>
+  <div class="doc doc-contents first">
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyType" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyType</span> <span class="o">=</span> <span class="n">Type</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any types.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.EmptyTuple" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">EmptyTuple</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents empty tuples <code>()</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Tuple1" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Tuple1</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous 1-tuples <code>(T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Tuple2" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Tuple2</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous 2-tuples <code>(T, T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Tuple3" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Tuple3</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous 3-tuples <code>(T, T, T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Tuple4" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Tuple4</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous 4-tuples <code>(T, T, T, T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Tuple5" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Tuple5</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous 5-tuples <code>(T, T, T, T, T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Tuple6" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Tuple6</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous 6-tuples <code>(T, T, T, T, T, T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Tuple7" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Tuple7</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous 7-tuples <code>(T, T, T, T, T, T, T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Tuple8" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Tuple8</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous 8-tuples <code>(T, T, T, T, T, T, T, T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Pair" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Pair</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous pairs <code>(T, T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.DynamicTuple" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">DynamicTuple</span> <span class="o">=</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="bp">Ellipsis</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents homogeneous tuples of any length <code>(T, ...)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyTuple" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyTuple</span> <span class="o">=</span> <span class="n">DynamicTuple</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any tuples <code>(Any, ...)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyError" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyError</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="ne">BaseException</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any errors.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyErrorType" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyErrorType</span> <span class="o">=</span> <span class="n">Type</span><span class="p">[</span><span class="n">AnyError</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any error types.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.NormalError" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">NormalError</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="ne">Exception</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents normal errors.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.NormalErrorType" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">NormalErrorType</span> <span class="o">=</span> <span class="n">Type</span><span class="p">[</span><span class="n">NormalError</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents normal error types.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyErrorTypes" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyErrorTypes</span> <span class="o">=</span> <span class="n">DynamicTuple</span><span class="p">[</span><span class="n">AnyErrorType</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents tuples of any error types <code>(AnyErrorType, ...)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.NormalErrorTypes" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">NormalErrorTypes</span> <span class="o">=</span> <span class="n">DynamicTuple</span><span class="p">[</span><span class="n">NormalErrorType</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents tuples of normal error types <code>(NormalErrorType, ...)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyContextManager" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyContextManager</span> <span class="o">=</span> <span class="n">ContextManager</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any context managers.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.SimpleContextManager" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">SimpleContextManager</span> <span class="o">=</span> <span class="n">ContextManager</span><span class="p">[</span><span class="kc">None</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents simple context managers that do not return anything on entering.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyAsyncContextManager" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyAsyncContextManager</span> <span class="o">=</span> <span class="n">AsyncContextManager</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any async context managers.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.SimpleAsyncContextManager" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">SimpleAsyncContextManager</span> <span class="o">=</span> <span class="n">AsyncContextManager</span><span class="p">[</span><span class="kc">None</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents simple async context managers that do not return anything on entering.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.DynamicCallable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">DynamicCallable</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[</span><span class="bp">Ellipsis</span><span class="p">,</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents dynamic callables <code>(...) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyCallable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyCallable</span> <span class="o">=</span> <span class="n">DynamicCallable</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any callables <code>(...) -&gt; Any</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Nullary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Nullary</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents nullary functions <code>() -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Unary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Unary</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">T</span><span class="p">],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents unary functions <code>(T) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Binary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Binary</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents binary functions <code>(T, U) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Ternary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Ternary</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents ternary functions <code>(T, U, V) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Quaternary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Quaternary</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">W</span><span class="p">],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents quaternary functions <code>(T, U, V, W) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Identity" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Identity</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents identity functions <code>(T) -&gt; T</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Parse" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Parse</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents parsing functions <code>(str) -&gt; T</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Inspect" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Inspect</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents inspect functions <code>(T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.ForEach" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">ForEach</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents for-each functions <code>(T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Validate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Validate</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents validation functions <code>(T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Predicate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Predicate</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents predicates <code>(T) -&gt; bool</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.GenericPredicate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">GenericPredicate</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[</span><span class="n">P</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents generic predicates <code>(P) -&gt; bool</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Compare" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Compare</span> <span class="o">=</span> <span class="n">Binary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents comparison functions <code>(T, U) -&gt; bool</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.UnpackNullary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">UnpackNullary</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">EmptyTuple</span><span class="p">,</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents unpacking nullary functions <code>(()) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.UnpackUnary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">UnpackUnary</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents unpacking unary functions <code>((T)) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.UnpackBinary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">UnpackBinary</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents unpacking binary functions <code>((T, U)) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.UnpackTernary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">UnpackTernary</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents unpacking ternary functions <code>((T, U, V)) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.UnpackQuaternary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">UnpackQuaternary</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">W</span><span class="p">],</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents unpacking quaternary functions <code>((T, U, V, W)) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Decorator" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Decorator</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">F</span><span class="p">,</span> <span class="n">G</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents decorators <code>(F) -&gt; G</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.DecoratorIdentity" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">DecoratorIdentity</span> <span class="o">=</span> <span class="n">Identity</span><span class="p">[</span><span class="n">F</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents identity decorators <code>(F) -&gt; F</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.TypeDecorator" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">TypeDecorator</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">C</span><span class="p">,</span> <span class="n">D</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents type decorators <code>(C) -&gt; D</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.TypeDecoratorIdentity" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">TypeDecoratorIdentity</span> <span class="o">=</span> <span class="n">Identity</span><span class="p">[</span><span class="n">C</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents identity type decorators <code>(C) -&gt; C</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncCallable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncCallable</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[</span><span class="n">P</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">R</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async callables <code>async (P) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.DynamicAsyncCallable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">DynamicAsyncCallable</span> <span class="o">=</span> <span class="n">AsyncCallable</span><span class="p">[</span><span class="bp">Ellipsis</span><span class="p">,</span> <span class="n">R</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents dynamic async callables <code>async (...) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyAsyncCallable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyAsyncCallable</span> <span class="o">=</span> <span class="n">DynamicAsyncCallable</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any async callables <code>async (...) -&gt; Any</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncNullary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncNullary</span> <span class="o">=</span> <span class="n">Nullary</span><span class="p">[</span><span class="n">Awaitable</span><span class="p">[</span><span class="n">R</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async nullary functions <code>async () -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncUnary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncUnary</span> <span class="o">=</span> <span class="n">Unary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">R</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async unary functions <code>async (T) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncBinary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncBinary</span> <span class="o">=</span> <span class="n">Binary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">R</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async binary functions <code>async (T, U) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncTernary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncTernary</span> <span class="o">=</span> <span class="n">Ternary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">R</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async ternary functions <code>async (T, U, V) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncQuaternary" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncQuaternary</span> <span class="o">=</span> <span class="n">Quaternary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="n">V</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">Awaitable</span><span class="p">[</span><span class="n">R</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async quaternary functions <code>async (T, U, V, W) -&gt; R</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncIdentity" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncIdentity</span> <span class="o">=</span> <span class="n">AsyncUnary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async identity functions <code>async (T) -&gt; T</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncParse" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncParse</span> <span class="o">=</span> <span class="n">AsyncUnary</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents parsing functions <code>async (str) -&gt; T</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncInspect" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncInspect</span> <span class="o">=</span> <span class="n">AsyncUnary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async inspect functions <code>async (T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncForEach" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncForEach</span> <span class="o">=</span> <span class="n">AsyncUnary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async for-each functions <code>async (T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncValidate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncValidate</span> <span class="o">=</span> <span class="n">AsyncUnary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="kc">None</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async validation functions <code>async (T)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncPredicate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncPredicate</span> <span class="o">=</span> <span class="n">AsyncUnary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async predicates <code>async (T) -&gt; bool</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncGenericPredicate" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncGenericPredicate</span> <span class="o">=</span> <span class="n">AsyncCallable</span><span class="p">[</span><span class="n">P</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async generic predicates <code>async (P) -&gt; bool</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncCompare" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncCompare</span> <span class="o">=</span> <span class="n">AsyncBinary</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">,</span> <span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async comparison functions <code>async (T, U) -&gt; bool</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyIterable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyIterable</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">AsyncIterable</span><span class="p">[</span><span class="n">T</span><span class="p">],</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any iterable, async or not.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnyIterator" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnyIterator</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">AsyncIterator</span><span class="p">[</span><span class="n">T</span><span class="p">],</span> <span class="n">Iterator</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any iterator, async or not.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Selectors" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Selectors</span> <span class="o">=</span> <span class="n">Iterable</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents selectors.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AsyncSelectors" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AsyncSelectors</span> <span class="o">=</span> <span class="n">AsyncIterable</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents async selectors.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.AnySelectors" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">AnySelectors</span> <span class="o">=</span> <span class="n">AnyIterable</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents any selectors, async or not.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.RecursiveIterable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">RecursiveIterable</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">[</span><span class="s1">&#39;RecursiveIterable[T]&#39;</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents recursive iterables, up to 8 levels in depth.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.RecursiveAsyncIterable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">RecursiveAsyncIterable</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">AsyncIterable</span><span class="p">[</span><span class="s1">&#39;RecursiveAsyncIterable[T]&#39;</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents recursive async iterables.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.RecursiveAnyIterable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">RecursiveAnyIterable</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">AnyIterable</span><span class="p">[</span><span class="s1">&#39;RecursiveAnyIterable[T]&#39;</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents recursive iterables, async or not.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Pairs" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Pairs</span> <span class="o">=</span> <span class="n">Iterable</span><span class="p">[</span><span class="n">Tuple</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents iterables of pairs <code>(T, U)</code>.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.StringDict" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">StringDict</span> <span class="o">=</span> <span class="n">Dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents string dictionaries.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.StringMapping" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">StringMapping</span> <span class="o">=</span> <span class="n">Mapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents string mappings.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Attributes" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Attributes</span> <span class="o">=</span> <span class="n">StringDict</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents attributes.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Namespace" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Namespace</span> <span class="o">=</span> <span class="n">StringDict</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents namespaces.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Parameters" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Parameters</span> <span class="o">=</span> <span class="n">StringMapping</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents parameters.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Headers" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Headers</span> <span class="o">=</span> <span class="n">StringMapping</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents headers.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoDict" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoDict</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="n">Q</span><span class="p">,</span> <span class="n">T</span><span class="p">],</span> <span class="n">Pairs</span><span class="p">[</span><span class="n">Q</span><span class="p">,</span> <span class="n">T</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into dictionaries.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoMapping" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoMapping</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">Mapping</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">],</span> <span class="n">Pairs</span><span class="p">[</span><span class="n">T</span><span class="p">,</span> <span class="n">U</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into mappings.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoStringDict" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoStringDict</span> <span class="o">=</span> <span class="n">IntoDict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into string dictionaries.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoStringMapping" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoStringMapping</span> <span class="o">=</span> <span class="n">IntoMapping</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">T</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into string mappings.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoAttributes" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoAttributes</span> <span class="o">=</span> <span class="n">IntoStringDict</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into attributes.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoNamespace" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoNamespace</span> <span class="o">=</span> <span class="n">IntoStringDict</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into namespaces.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoParameters" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoParameters</span> <span class="o">=</span> <span class="n">IntoStringMapping</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into parameters.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoHeaders" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoHeaders</span> <span class="o">=</span> <span class="n">IntoStringMapping</span><span class="p">[</span><span class="n">Any</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into headers.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.IntoPath" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IntoPath</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">PathLike</span><span class="p">[</span><span class="nb">str</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents types that can be converted into paths.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Primitive" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Primitive</span> <span class="o">=</span> <span class="n">Optional</span><span class="p">[</span><span class="n">Union</span><span class="p">[</span><span class="nb">bool</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">,</span> <span class="nb">str</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents primitive types.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h2 id="typing_aliases.typing.Payload" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">Payload</span> <span class="o">=</span> <span class="n">Union</span><span class="p">[</span><span class="n">Primitive</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="s1">&#39;Payload&#39;</span><span class="p">],</span> <span class="n">StringDict</span><span class="p">[</span><span class="s1">&#39;Payload&#39;</span><span class="p">]]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Represents payloads.</p>
+  </div>
+
+</div>
+
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_async_iterable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_async_iterable</span><span class="p">(</span><span class="n">iterable</span><span class="p">:</span> <span class="n">AnyIterable</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">AsyncIterable</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if an <a class="autorefs autorefs-internal" href="#typing_aliases.typing.AnyIterable"><code>AnyIterable[T]</code></a> is an
+<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.AsyncIterable"><code>AsyncIterable[T]</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>iterable</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="typing_aliases.typing.AnyIterable" href="#typing_aliases.typing.AnyIterable">AnyIterable</a>[<span title="typing_aliases.typing.T">T</span>]</code>
+          </td>
+          <td><p>The iterable to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" title="typing.AsyncIterable" href="https://docs.python.org/3/library/typing.html#typing.AsyncIterable">AsyncIterable</a>[<span title="typing_aliases.typing.T">T</span>]]</code>
+          </td>
+          <td><p>Whether the iterable is an <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.AsyncIterable"><code>AsyncIterable[T]</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">442</span>
+<span class="normal">443</span>
+<span class="normal">444</span>
+<span class="normal">445</span>
+<span class="normal">446</span>
+<span class="normal">447</span>
+<span class="normal">448</span>
+<span class="normal">449</span>
+<span class="normal">450</span>
+<span class="normal">451</span>
+<span class="normal">452</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_async_iterable</span><span class="p">(</span><span class="n">iterable</span><span class="p">:</span> <span class="n">AnyIterable</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">AsyncIterable</span><span class="p">[</span><span class="n">T</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if an [`AnyIterable[T]`][typing_aliases.typing.AnyIterable] is an</span>
+<span class="sd">    [`AsyncIterable[T]`][typing.AsyncIterable].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        iterable: The iterable to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the iterable is an [`AsyncIterable[T]`][typing.AsyncIterable].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">AsyncIterable</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_iterable" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_iterable</span><span class="p">(</span><span class="n">iterable</span><span class="p">:</span> <span class="n">AnyIterable</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">Iterable</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if an <a class="autorefs autorefs-internal" href="#typing_aliases.typing.AnyIterable"><code>AnyIterable[T]</code></a> is an
+<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Iterable"><code>Iterable[T]</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>iterable</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="typing_aliases.typing.AnyIterable" href="#typing_aliases.typing.AnyIterable">AnyIterable</a>[<span title="typing_aliases.typing.T">T</span>]</code>
+          </td>
+          <td><p>The iterable to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" title="typing.Iterable" href="https://docs.python.org/3/library/typing.html#typing.Iterable">Iterable</a>[<span title="typing_aliases.typing.T">T</span>]]</code>
+          </td>
+          <td><p>Whether the iterable is an <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Iterable"><code>Iterable[T]</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">455</span>
+<span class="normal">456</span>
+<span class="normal">457</span>
+<span class="normal">458</span>
+<span class="normal">459</span>
+<span class="normal">460</span>
+<span class="normal">461</span>
+<span class="normal">462</span>
+<span class="normal">463</span>
+<span class="normal">464</span>
+<span class="normal">465</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_iterable</span><span class="p">(</span><span class="n">iterable</span><span class="p">:</span> <span class="n">AnyIterable</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">Iterable</span><span class="p">[</span><span class="n">T</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if an [`AnyIterable[T]`][typing_aliases.typing.AnyIterable] is an</span>
+<span class="sd">    [`Iterable[T]`][typing.Iterable].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        iterable: The iterable to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the iterable is an [`Iterable[T]`][typing.Iterable].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">iterable</span><span class="p">,</span> <span class="n">Iterable</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_async_iterator" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_async_iterator</span><span class="p">(</span><span class="n">iterator</span><span class="p">:</span> <span class="n">AnyIterator</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">AsyncIterator</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if an <a class="autorefs autorefs-internal" href="#typing_aliases.typing.AnyIterator"><code>AnyIterator[T]</code></a> is an
+<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.AsyncIterator"><code>AsyncIterator[T]</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>iterator</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="typing_aliases.typing.AnyIterator" href="#typing_aliases.typing.AnyIterator">AnyIterator</a>[<span title="typing_aliases.typing.T">T</span>]</code>
+          </td>
+          <td><p>The iterator to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" title="typing.AsyncIterator" href="https://docs.python.org/3/library/typing.html#typing.AsyncIterator">AsyncIterator</a>[<span title="typing_aliases.typing.T">T</span>]]</code>
+          </td>
+          <td><p>Whether the iterator is an <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.AsyncIterator"><code>AsyncIterator[T]</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">468</span>
+<span class="normal">469</span>
+<span class="normal">470</span>
+<span class="normal">471</span>
+<span class="normal">472</span>
+<span class="normal">473</span>
+<span class="normal">474</span>
+<span class="normal">475</span>
+<span class="normal">476</span>
+<span class="normal">477</span>
+<span class="normal">478</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_async_iterator</span><span class="p">(</span><span class="n">iterator</span><span class="p">:</span> <span class="n">AnyIterator</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">AsyncIterator</span><span class="p">[</span><span class="n">T</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if an [`AnyIterator[T]`][typing_aliases.typing.AnyIterator] is an</span>
+<span class="sd">    [`AsyncIterator[T]`][typing.AsyncIterator].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        iterator: The iterator to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the iterator is an [`AsyncIterator[T]`][typing.AsyncIterator].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">iterator</span><span class="p">,</span> <span class="n">AsyncIterator</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_iterator" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_iterator</span><span class="p">(</span><span class="n">iterator</span><span class="p">:</span> <span class="n">AnyIterator</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">Iterator</span><span class="p">[</span><span class="n">T</span><span class="p">]]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if an <a class="autorefs autorefs-internal" href="#typing_aliases.typing.AnyIterator"><code>AnyIterator[T]</code></a> is an
+<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Iterator"><code>Iterator[T]</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>iterator</code></td>
+          <td>
+                <code><a class="autorefs autorefs-internal" title="typing_aliases.typing.AnyIterator" href="#typing_aliases.typing.AnyIterator">AnyIterator</a>[<span title="typing_aliases.typing.T">T</span>]</code>
+          </td>
+          <td><p>The iterator to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" title="typing.Iterator" href="https://docs.python.org/3/library/typing.html#typing.Iterator">Iterator</a>[<span title="typing_aliases.typing.T">T</span>]]</code>
+          </td>
+          <td><p>Whether the iterator is an <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/typing.html#typing.Iterator"><code>Iterator[T]</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">481</span>
+<span class="normal">482</span>
+<span class="normal">483</span>
+<span class="normal">484</span>
+<span class="normal">485</span>
+<span class="normal">486</span>
+<span class="normal">487</span>
+<span class="normal">488</span>
+<span class="normal">489</span>
+<span class="normal">490</span>
+<span class="normal">491</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_iterator</span><span class="p">(</span><span class="n">iterator</span><span class="p">:</span> <span class="n">AnyIterator</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">Iterator</span><span class="p">[</span><span class="n">T</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if an [`AnyIterator[T]`][typing_aliases.typing.AnyIterator] is an</span>
+<span class="sd">    [`Iterator[T]`][typing.Iterator].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        iterator: The iterator to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the iterator is an [`Iterator[T]`][typing.Iterator].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">iterator</span><span class="p">,</span> <span class="n">Iterator</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_none" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_none</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="kc">None</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given <code>item</code> is <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None"><code>None</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[None]</code>
+          </td>
+          <td><p>Whether the given item is <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None"><code>None</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">497</span>
+<span class="normal">498</span>
+<span class="normal">499</span>
+<span class="normal">500</span>
+<span class="normal">501</span>
+<span class="normal">502</span>
+<span class="normal">503</span>
+<span class="normal">504</span>
+<span class="normal">505</span>
+<span class="normal">506</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_none</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="kc">None</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given `item` is [`None`][None].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is [`None`][None].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">item</span> <span class="ow">is</span> <span class="kc">None</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_not_none" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_not_none</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">T</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given <code>item</code> is <em>not</em> <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None"><code>None</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Optional" href="https://docs.python.org/3/library/typing.html#typing.Optional">Optional</a>[<span title="typing_aliases.typing.T">T</span>]</code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<span title="typing_aliases.typing.T">T</span>]</code>
+          </td>
+          <td><p>Whether the given item is <em>not</em> <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#None"><code>None</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">509</span>
+<span class="normal">510</span>
+<span class="normal">511</span>
+<span class="normal">512</span>
+<span class="normal">513</span>
+<span class="normal">514</span>
+<span class="normal">515</span>
+<span class="normal">516</span>
+<span class="normal">517</span>
+<span class="normal">518</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_not_none</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="n">T</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given `item` is *not* [`None`][None].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is *not* [`None`][None].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">item</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_int" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_int</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int">int</a>]</code>
+          </td>
+          <td><p>Whether the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">524</span>
+<span class="normal">525</span>
+<span class="normal">526</span>
+<span class="normal">527</span>
+<span class="normal">528</span>
+<span class="normal">529</span>
+<span class="normal">530</span>
+<span class="normal">531</span>
+<span class="normal">532</span>
+<span class="normal">533</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_int</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given item is of type [`int`][int].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is of type [`int`][int].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_float" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_float</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">float</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float"><code>float</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float">float</a>]</code>
+          </td>
+          <td><p>Whether the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#float"><code>float</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">536</span>
+<span class="normal">537</span>
+<span class="normal">538</span>
+<span class="normal">539</span>
+<span class="normal">540</span>
+<span class="normal">541</span>
+<span class="normal">542</span>
+<span class="normal">543</span>
+<span class="normal">544</span>
+<span class="normal">545</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_float</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">float</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given item is of type [`float`][float].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is of type [`float`][float].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">float</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_bytes" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_bytes</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">bytes</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#bytes"><code>bytes</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#bytes">bytes</a>]</code>
+          </td>
+          <td><p>Whether the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#bytes"><code>bytes</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">548</span>
+<span class="normal">549</span>
+<span class="normal">550</span>
+<span class="normal">551</span>
+<span class="normal">552</span>
+<span class="normal">553</span>
+<span class="normal">554</span>
+<span class="normal">555</span>
+<span class="normal">556</span>
+<span class="normal">557</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_bytes</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">bytes</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given item is of type [`bytes`][bytes].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is of type [`bytes`][bytes].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_string" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_string</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str"><code>str</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str">str</a>]</code>
+          </td>
+          <td><p>Whether the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#str"><code>str</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">560</span>
+<span class="normal">561</span>
+<span class="normal">562</span>
+<span class="normal">563</span>
+<span class="normal">564</span>
+<span class="normal">565</span>
+<span class="normal">566</span>
+<span class="normal">567</span>
+<span class="normal">568</span>
+<span class="normal">569</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_string</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">str</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given item is of type [`str`][str].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is of type [`str`][str].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_slice" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_slice</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">slice</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#slice"><code>slice</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#slice">slice</a>]</code>
+          </td>
+          <td><p>Whether the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#slice"><code>slice</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">572</span>
+<span class="normal">573</span>
+<span class="normal">574</span>
+<span class="normal">575</span>
+<span class="normal">576</span>
+<span class="normal">577</span>
+<span class="normal">578</span>
+<span class="normal">579</span>
+<span class="normal">580</span>
+<span class="normal">581</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_slice</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">slice</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given item is of type [`slice`][slice].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is of type [`slice`][slice].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">slice</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_range" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_range</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">range</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#range"><code>range</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#range">range</a>]</code>
+          </td>
+          <td><p>Whether the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/stdtypes.html#range"><code>range</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">584</span>
+<span class="normal">585</span>
+<span class="normal">586</span>
+<span class="normal">587</span>
+<span class="normal">588</span>
+<span class="normal">589</span>
+<span class="normal">590</span>
+<span class="normal">591</span>
+<span class="normal">592</span>
+<span class="normal">593</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_range</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">range</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given item is of type [`range`][range].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is of type [`range`][range].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">range</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_true" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_true</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="kc">True</span><span class="p">]]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given <code>item</code> is <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#True"><code>True</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<span title="typing_extensions.Literal">Literal</span>[True]]</code>
+          </td>
+          <td><p>Whether the given item is <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#True"><code>True</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">596</span>
+<span class="normal">597</span>
+<span class="normal">598</span>
+<span class="normal">599</span>
+<span class="normal">600</span>
+<span class="normal">601</span>
+<span class="normal">602</span>
+<span class="normal">603</span>
+<span class="normal">604</span>
+<span class="normal">605</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_true</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="kc">True</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given `item` is [`True`][True].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is [`True`][True].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">item</span> <span class="ow">is</span> <span class="kc">True</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_false" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_false</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="kc">False</span><span class="p">]]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given <code>item</code> is <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#False"><code>False</code></a>.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<span title="typing_extensions.Literal">Literal</span>[False]]</code>
+          </td>
+          <td><p>Whether the given item is <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/constants.html#False"><code>False</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">608</span>
+<span class="normal">609</span>
+<span class="normal">610</span>
+<span class="normal">611</span>
+<span class="normal">612</span>
+<span class="normal">613</span>
+<span class="normal">614</span>
+<span class="normal">615</span>
+<span class="normal">616</span>
+<span class="normal">617</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_false</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">Literal</span><span class="p">[</span><span class="kc">False</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given `item` is [`False`][False].</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is [`False`][False].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">item</span> <span class="ow">is</span> <span class="kc">False</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_bool" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_bool</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">bool</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool"><code>bool</code></a>.</p>
+<p>This is equivalent to:</p>
+<div class="highlight"><pre><span></span><code><span class="n">is_true</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="ow">or</span> <span class="n">is_false</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool">bool</a>]</code>
+          </td>
+          <td><p>Whether the given item is of type <a class="autorefs autorefs-external" href="https://docs.python.org/3/library/functions.html#bool"><code>bool</code></a>.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">620</span>
+<span class="normal">621</span>
+<span class="normal">622</span>
+<span class="normal">623</span>
+<span class="normal">624</span>
+<span class="normal">625</span>
+<span class="normal">626</span>
+<span class="normal">627</span>
+<span class="normal">628</span>
+<span class="normal">629</span>
+<span class="normal">630</span>
+<span class="normal">631</span>
+<span class="normal">632</span>
+<span class="normal">633</span>
+<span class="normal">634</span>
+<span class="normal">635</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_bool</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="nb">bool</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the given item is of type [`bool`][bool].</span>
+
+<span class="sd">    This is equivalent to:</span>
+
+<span class="sd">    ```python</span>
+<span class="sd">    is_true(item) or is_false(item)</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the given item is of type [`bool`][bool].</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_true</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="ow">or</span> <span class="n">is_false</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_same_type" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_same_type</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">T</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the item is of the same type <code>T</code> as the other item.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>other</code></td>
+          <td>
+                <code><span title="typing_aliases.typing.T">T</span></code>
+          </td>
+          <td><p>The other item to check against.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<span title="typing_aliases.typing.T">T</span>]</code>
+          </td>
+          <td><p>Whether the item is of the same type <code>T</code> as the other item.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">641</span>
+<span class="normal">642</span>
+<span class="normal">643</span>
+<span class="normal">644</span>
+<span class="normal">645</span>
+<span class="normal">646</span>
+<span class="normal">647</span>
+<span class="normal">648</span>
+<span class="normal">649</span>
+<span class="normal">650</span>
+<span class="normal">651</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_same_type</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the item is of the same type `T` as the other item.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+<span class="sd">        other: The other item to check against.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the item is of the same type `T` as the other item.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">type</span><span class="p">(</span><span class="n">item</span><span class="p">)</span> <span class="ow">is</span> <span class="nb">type</span><span class="p">(</span><span class="n">other</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-function">
+
+
+
+<h2 id="typing_aliases.typing.is_same_or_sub_type" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_same_or_sub_type</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">T</span><span class="p">]</span></code>
+
+</h2>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Checks if the item is of the sub- or same type <code>T</code> as the other item.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>item</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" title="typing.Any" href="https://docs.python.org/3/library/typing.html#typing.Any">Any</a></code>
+          </td>
+          <td><p>The item to check.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+        <tr>
+          <td><code>other</code></td>
+          <td>
+                <code><span title="typing_aliases.typing.T">T</span></code>
+          </td>
+          <td><p>The other item to check against.</p></td>
+          <td>
+              <em>required</em>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code><span title="typing_extensions.TypeGuard">TypeGuard</span>[<span title="typing_aliases.typing.T">T</span>]</code>
+          </td>
+          <td><p>Whether the item is of the sub- or same type <code>T</code> as the other item.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>typing_aliases/typing.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">654</span>
+<span class="normal">655</span>
+<span class="normal">656</span>
+<span class="normal">657</span>
+<span class="normal">658</span>
+<span class="normal">659</span>
+<span class="normal">660</span>
+<span class="normal">661</span>
+<span class="normal">662</span>
+<span class="normal">663</span>
+<span class="normal">664</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">is_same_or_sub_type</span><span class="p">(</span><span class="n">item</span><span class="p">:</span> <span class="n">Any</span><span class="p">,</span> <span class="n">other</span><span class="p">:</span> <span class="n">T</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">TypeGuard</span><span class="p">[</span><span class="n">T</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Checks if the item is of the sub- or same type `T` as the other item.</span>
+
+<span class="sd">    Arguments:</span>
+<span class="sd">        item: The item to check.</span>
+<span class="sd">        other: The other item to check against.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        Whether the item is of the sub- or same type `T` as the other item.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">is_instance</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="nb">type</span><span class="p">(</span><span class="n">other</span><span class="p">))</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.b4d07000.min.js"></script>
+      
+    
+  </body>
+</html>

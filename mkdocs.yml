@@ -1,0 +1,64 @@
+site_name: typing-aliases
+site_author: nekitdev
+site_description: Various type aliases..
+
+repo_name: nekitdev/typing-aliases
+repo_url: https://github.com/nekitdev/typing-aliases
+
+remote_branch: github-pages
+
+nav:
+  - Index: "index.md"
+  - Reference: "reference.md"
+  - Changelog: "changelog.md"
+  - Security: "security.md"
+  - Code of Conduct: "code_of_conduct.md"
+  - Contributing: "contributing.md"
+
+watch:
+  - docs
+  - typing_aliases
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+
+      primary: deep purple
+      accent: light blue
+
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+
+      primary: light blue
+      accent: deep purple
+
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+plugins:
+  - search
+
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            members_order: source
+            show_signature_annotations: true
+
+          paths: [typing_aliases]
+
+          import:
+            - https://docs.python.org/3/objects.inv
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences

@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.1.2 (2023-05-21)
+
+### Fixes
+
+- Fixed `DynamicAsyncCallable[R]` type definition.
+
 ## 1.1.1 (2023-05-21)
 
 ### Fixes

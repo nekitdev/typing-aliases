@@ -309,7 +309,7 @@ TypeDecoratorIdentity = Identity[C]
 
 AsyncCallable = Callable[P, Awaitable[R]]
 """Represents async callables `async (P) -> R`."""
-DynamicAsyncCallable = AsyncCallable[..., R]  # type: ignore
+DynamicAsyncCallable = Callable[..., Awaitable[R]]
 """Represents dynamic async callables `async (...) -> R`."""
 AnyAsyncCallable = DynamicAsyncCallable[Any]
 """Represents any async callables `async (...) -> Any`."""
@@ -369,10 +369,8 @@ AnySelectors = AnyIterable[bool]
 
 RecursiveIterable = Union[T, Iterable["RecursiveIterable[T]"]]
 """Represents recursive iterables."""
-
 RecursiveAsyncIterable = Union[T, AsyncIterable["RecursiveAsyncIterable[T]"]]
 """Represents recursive async iterables."""
-
 RecursiveAnyIterable = Union[T, AnyIterable["RecursiveAnyIterable[T]"]]
 """Represents recursive iterables, async or not."""
 
@@ -388,7 +386,6 @@ StringMapping = Mapping[str, T]
 
 Attributes = StringDict[Any]
 """Represents attributes."""
-
 Namespace = StringDict[Any]
 """Represents namespaces."""
 
@@ -411,7 +408,6 @@ IntoStringMapping = IntoMapping[str, T]
 
 IntoAttributes = IntoStringDict[Any]
 """Represents types that can be converted into attributes."""
-
 IntoNamespace = IntoStringDict[Any]
 """Represents types that can be converted into namespaces."""
 

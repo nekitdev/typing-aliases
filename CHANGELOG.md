@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.1.1 (2023-05-21)
+
+### Fixes
+
+- Fixed `RecursiveIterable[T]` docs.
+
 ## 1.1.0 (2023-05-20)
 
 Overall rewrite.

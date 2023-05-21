@@ -6,7 +6,7 @@ __url__ = "https://github.com/nekitdev/typing-aliases"
 __title__ = "typing_aliases"
 __author__ = "nekitdev"
 __license__ = "MIT"
-__version__ = "1.1.0"
+__version__ = "1.1.1"
 
 from typing_aliases.typing import (
     AnyAsyncCallable,

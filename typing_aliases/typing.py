@@ -368,7 +368,7 @@ AnySelectors = AnyIterable[bool]
 # recursive iterables
 
 RecursiveIterable = Union[T, Iterable["RecursiveIterable[T]"]]
-"""Represents recursive iterables, up to 8 levels in depth."""
+"""Represents recursive iterables."""
 
 RecursiveAsyncIterable = Union[T, AsyncIterable["RecursiveAsyncIterable[T]"]]
 """Represents recursive async iterables."""

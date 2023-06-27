@@ -421,7 +421,7 @@ try:
     IntoPath = Union[str, PathLike[str]]  # type: ignore
     """Represents types that can be converted into paths."""
 
-except TypeError:
+except (AttributeError, TypeError):
     IntoPath = Union[str, PathLike]  # type: ignore
     """Represents types that can be converted into paths."""
 

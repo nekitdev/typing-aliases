@@ -14,6 +14,7 @@ from typing import (
     Iterable,
     Iterator,
     List,
+    Literal,
     Mapping,
     Optional,
     Tuple,
@@ -22,7 +23,7 @@ from typing import (
     Union,
 )
 
-from typing_extensions import Literal, ParamSpec, TypeAlias, TypeGuard
+from typing_extensions import ParamSpec, TypeGuard
 
 __all__ = (
     # types
@@ -203,12 +204,12 @@ AnyTuple = DynamicTuple[Any]
 
 # errors
 
-AnyError: TypeAlias = BaseException
+AnyError = BaseException
 """Represents any errors."""
 AnyErrorType = Type[AnyError]
 """Represents any error types."""
 
-NormalError: TypeAlias = Exception
+NormalError = Exception
 """Represents normal errors."""
 NormalErrorType = Type[NormalError]
 """Represents normal error types."""

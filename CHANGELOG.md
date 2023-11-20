@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.2.0 (2023-11-20)
+
+### Internal
+
+- Migrated to Python 3.8.
+
 ## 1.1.3 (2023-06-28)
 
 ### Fixes

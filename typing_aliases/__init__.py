@@ -6,7 +6,7 @@ __url__ = "https://github.com/nekitdev/typing-aliases"
 __title__ = "typing_aliases"
 __author__ = "nekitdev"
 __license__ = "MIT"
-__version__ = "1.3.0"
+__version__ = "1.3.1"
 
 from typing_aliases.typing import (
     AnyAsyncCallable,
@@ -19,6 +19,7 @@ from typing_aliases.typing import (
     AnyIterable,
     AnyIterator,
     AnySelectors,
+    AnySet,
     AnyTuple,
     AnyType,
     AsyncBinary,
@@ -120,6 +121,8 @@ from typing_aliases.typing import (
 )
 
 __all__ = (
+    # sets
+    "AnySet",
     # types
     "AnyType",
     # tuples

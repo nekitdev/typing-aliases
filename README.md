@@ -42,7 +42,7 @@ Or by directly specifying it in the configuration like so:
 
 ```toml
 [tool.poetry.dependencies]
-typing-aliases = "^1.3.0"
+typing-aliases = "^1.3.1"
 ```
 
 Alternatively, you can add it directly from the source:

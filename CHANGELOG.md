@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.3.1 (2023-12-01)
+
+### Features
+
+- Exported `AnySet[T]`.
+
 ## 1.3.0 (2023-12-01)
 
 ### Features

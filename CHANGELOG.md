@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.3.0 (2023-12-01)
+
+### Features
+
+- Added `AnySet[T]`.
+
 ## 1.2.0 (2023-11-20)
 
 ### Internal

@@ -2,6 +2,7 @@ from builtins import isinstance as is_instance
 from builtins import issubclass as is_subclass
 from os import PathLike
 from typing import (
+    AbstractSet,
     Any,
     AsyncContextManager,
     AsyncIterable,
@@ -26,6 +27,8 @@ from typing import (
 from typing_extensions import ParamSpec, TypeGuard
 
 __all__ = (
+    # sets
+    "AnySet",
     # types
     "AnyType",
     # tuples
@@ -166,6 +169,11 @@ W = TypeVar("W")
 R = TypeVar("R")
 
 P = ParamSpec("P")
+
+# sets
+
+AnySet = AbstractSet[T]
+"""Represents any sets."""
 
 # types
 

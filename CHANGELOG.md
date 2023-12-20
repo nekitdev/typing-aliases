@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.4.0 (2023-12-20)
+
+### Features
+
+- Added `required` decorator.
+
 ## 1.3.1 (2023-12-01)
 
 ### Features

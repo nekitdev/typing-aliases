@@ -1,3 +1,4 @@
+from abc import abstractmethod as required
 from builtins import isinstance as is_instance
 from builtins import issubclass as is_subclass
 from os import PathLike
@@ -157,6 +158,8 @@ __all__ = (
     # check aliases
     "is_instance",
     "is_subclass",
+    # required
+    "required",
 )
 
 # type variables

@@ -6,7 +6,7 @@ __url__ = "https://github.com/nekitdev/typing-aliases"
 __title__ = "typing_aliases"
 __author__ = "nekitdev"
 __license__ = "MIT"
-__version__ = "1.4.0"
+__version__ = "1.4.1"
 
 from typing_aliases.typing import (
     AnyAsyncCallable,
@@ -79,6 +79,8 @@ from typing_aliases.typing import (
     Selectors,
     SimpleAsyncContextManager,
     SimpleContextManager,
+    StrictPayload,
+    StrictPrimitive,
     StringDict,
     StringMapping,
     Ternary,
@@ -228,6 +230,9 @@ __all__ = (
     # payloads
     "Primitive",
     "Payload",
+    # strict payloads
+    "StrictPrimitive",
+    "StrictPayload",
     # iterable type guards
     "is_async_iterable",
     "is_iterable",

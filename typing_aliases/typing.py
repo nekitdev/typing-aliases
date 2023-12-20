@@ -134,6 +134,9 @@ __all__ = (
     # payloads
     "Primitive",
     "Payload",
+    # strict payloads
+    "StrictPrimitive",
+    "StrictPayload",
     # iterable type guards
     "is_async_iterable",
     "is_iterable",
@@ -443,6 +446,12 @@ Primitive = Optional[Union[bool, int, float, str]]
 
 Payload = Union[Primitive, List["Payload"], StringDict["Payload"]]
 """Represents payloads."""
+
+StrictPrimitive = Union[bool, int, float, str]
+"""Represents strict pritimive types (which exclude [`None`][None])."""
+
+StrictPayload = Union[StrictPrimitive, List["StrictPayload"], StringDict["StrictPayload"]]
+"""Represents strict payloads (which exclude [`None`][None])."""
 
 # iterable type guards
 

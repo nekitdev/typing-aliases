@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.4.1 (2023-12-20)
+
+### Features
+
+- Added `StrictPrimitive` and `StrictPayload` (`Primitive` and `Payload` that exclude `None`).
+
 ## 1.4.0 (2023-12-20)
 
 ### Features

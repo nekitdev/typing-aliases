@@ -1,6 +1,7 @@
-from abc import abstractmethod as required
-from builtins import isinstance as is_instance
-from builtins import issubclass as is_subclass
+import sys
+from abc import abstractmethod as standard_required
+from builtins import isinstance as standard_is_instance
+from builtins import issubclass as standard_is_subclass
 from os import PathLike
 from typing import (
     AbstractSet,
@@ -25,7 +26,8 @@ from typing import (
     Union,
 )
 
-from typing_extensions import ParamSpec, TypeGuard, assert_never
+from typing_extensions import ParamSpec, TypeGuard
+from typing_extensions import assert_never as standard_assert_never
 
 __all__ = (
     # sets
@@ -166,6 +168,20 @@ __all__ = (
     # assertions
     "assert_never",
 )
+
+# aliases
+
+is_instance = standard_is_instance
+"""An alias of the standard function used for instance checks."""
+
+is_subclass = standard_is_subclass
+"""An alias of the standard function used for subclass checks."""
+
+required = standard_required
+"""An alias of the standard decorator used for marking required methods in protocols."""
+
+assert_never = standard_assert_never
+"""An alias of the standard function used for exhaustiveness checking."""
 
 # type variables
 
@@ -434,13 +450,13 @@ IntoHeaders = IntoStringMapping[Any]
 """Represents types that can be converted into headers."""
 
 
-try:
-    IntoPath = Union[str, PathLike[str]]  # type: ignore
-    """Represents types that can be converted into paths."""
+if sys.version_info >= (3, 9):
+    IntoPath = Union[str, PathLike[str]]
+    """Represents types that can be converted into [`Path`][pathlib.Path]."""
 
-except (AttributeError, TypeError):
-    IntoPath = Union[str, PathLike]  # type: ignore
-    """Represents types that can be converted into paths."""
+else:
+    IntoPath = Union[str, PathLike]
+    """Represents types that can be converted into [`Path`][pathlib.Path]."""
 
 
 Primitive = Optional[Union[bool, int, float, str]]

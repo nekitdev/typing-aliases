@@ -2,6 +2,15 @@
 
 <!-- changelogging: start -->
 
+## 1.5.0 (2024-02-08)
+
+### Features
+
+- Re-exported `assert_never` from `typing_extensions`.
+  ([#15](https://github.com/nekitdev/typing-aliases/pull/15))
+
+- Improved documentation on re-exports.
+
 ## 1.4.1 (2023-12-20)
 
 ### Features

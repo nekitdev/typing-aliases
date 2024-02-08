@@ -6,7 +6,7 @@ __url__ = "https://github.com/nekitdev/typing-aliases"
 __title__ = "typing_aliases"
 __author__ = "nekitdev"
 __license__ = "MIT"
-__version__ = "1.4.1"
+__version__ = "1.5.0"
 
 from typing_aliases.typing import (
     AnyAsyncCallable,
@@ -101,6 +101,7 @@ from typing_aliases.typing import (
     UnpackTernary,
     UnpackUnary,
     Validate,
+    assert_never,
     is_async_iterable,
     is_async_iterator,
     is_bool,
@@ -259,4 +260,6 @@ __all__ = (
     "is_subclass",
     # required
     "required",
+    # assertions
+    "assert_never",
 )

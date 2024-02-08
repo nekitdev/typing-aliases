@@ -2,6 +2,13 @@
 
 <!-- changelogging: start -->
 
+## 1.6.0 (2024-02-08)
+
+### Removals
+
+- Removed `assert_never` as `typing_aliases` provides type aliases along with `typing_extensions`,
+  and said function should be imported from `typing_extensions` (or `typing`) instead.
+
 ## 1.5.0 (2024-02-08)
 
 ### Features

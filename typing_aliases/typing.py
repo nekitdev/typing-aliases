@@ -27,7 +27,6 @@ from typing import (
 )
 
 from typing_extensions import ParamSpec, TypeGuard
-from typing_extensions import assert_never as standard_assert_never
 
 __all__ = (
     # sets
@@ -165,8 +164,6 @@ __all__ = (
     "is_subclass",
     # required
     "required",
-    # assertions
-    "assert_never",
 )
 
 # aliases
@@ -179,9 +176,6 @@ is_subclass = standard_is_subclass
 
 required = standard_required
 """An alias of the standard decorator used for marking required methods in protocols."""
-
-assert_never = standard_assert_never
-"""An alias of the standard function used for exhaustiveness checking."""
 
 # type variables
 

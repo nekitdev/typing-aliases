@@ -455,7 +455,7 @@ if sys.version_info >= (3, 9):
     """Represents types that can be converted into [`Path`][pathlib.Path]."""
 
 else:
-    IntoPath = Union[str, PathLike]
+    IntoPath = Union[str, PathLike]  # type: ignore[type-arg]
     """Represents types that can be converted into [`Path`][pathlib.Path]."""
 
 

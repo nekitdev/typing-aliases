@@ -25,7 +25,7 @@ from typing import (
     Union,
 )
 
-from typing_extensions import ParamSpec, TypeGuard
+from typing_extensions import Never, ParamSpec, TypeGuard
 
 __all__ = (
     # sets
@@ -163,6 +163,8 @@ __all__ = (
     "is_subclass",
     # required
     "required",
+    # assertions
+    "assert_never",
 )
 
 # type variables
@@ -679,3 +681,13 @@ def is_same_or_sub_type(item: Any, other: T) -> TypeGuard[T]:
         Whether the item is of the sub- or same type `T` as the other item.
     """
     return is_instance(item, type(other))
+
+
+# assertions
+
+
+UNREACHABLE = "expected code to be unreachable"
+
+
+def assert_never(item: Never) -> Never:
+    raise AssertionError(UNREACHABLE)

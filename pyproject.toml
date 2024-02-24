@@ -31,7 +31,7 @@ include = "typing_aliases"
 [tool.poetry.dependencies]
 python = ">= 3.8"
 
-typing-extensions = ">= 4.9.0"
+typing-extensions = "^4.9.0"
 
 [tool.poetry.group.format.dependencies]
 ruff = "0.2.2"
@@ -48,7 +48,7 @@ optional = true
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "1.5.3"
-mkdocs-material = "9.5.8"
+mkdocs-material = "9.5.11"
 
 [tool.poetry.group.docs.dependencies.mkdocstrings]
 version = "0.24.0"

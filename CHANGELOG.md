@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.7.0 (2024-02-24)
+
+### Features
+
+- Added `is_sized` and `is_hashable` type guards.
+
 ## 1.6.0 (2024-02-08)
 
 ### Removals

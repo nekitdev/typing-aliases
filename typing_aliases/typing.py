@@ -1,7 +1,7 @@
 import sys
-from abc import abstractmethod as standard_required
-from builtins import isinstance as standard_is_instance
-from builtins import issubclass as standard_is_subclass
+from abc import abstractmethod as required
+from builtins import isinstance as is_instance
+from builtins import issubclass as is_subclass
 from os import PathLike
 from typing import (
     AbstractSet,
@@ -20,6 +20,7 @@ from typing import (
     Literal,
     Mapping,
     Optional,
+    Sized,
     Tuple,
     Type,
     TypeVar,
@@ -156,6 +157,9 @@ __all__ = (
     "is_true",
     "is_false",
     "is_bool",
+    # collections
+    "is_sized",
+    "is_hashable",
     # type guards
     "is_same_type",
     "is_same_or_sub_type",
@@ -165,17 +169,6 @@ __all__ = (
     # required
     "required",
 )
-
-# aliases
-
-is_instance = standard_is_instance
-"""An alias of the standard function used for instance checks."""
-
-is_subclass = standard_is_subclass
-"""An alias of the standard function used for subclass checks."""
-
-required = standard_required
-"""An alias of the standard decorator used for marking required methods in protocols."""
 
 # type variables
 
@@ -662,6 +655,33 @@ def is_bool(item: Any) -> TypeGuard[bool]:
         Whether the given item is of type [`bool`][bool].
     """
     return is_true(item) or is_false(item)
+
+
+# collections
+
+
+def is_sized(item: Any) -> TypeGuard[Sized]:
+    """Checks if the given item is sized.
+
+    Arguments:
+        item: The item to check.
+
+    Returns:
+        Whether the given item is sized.
+    """
+    return is_instance(item, Sized)
+
+
+def is_hashable(item: Any) -> TypeGuard[Hashable]:
+    """Checks if the given item is hashable.
+
+    Arguments:
+        item: The item to check.
+
+    Returns:
+        Whether the given item is hashable.
+    """
+    return is_instance(item, Hashable)
 
 
 # type guards

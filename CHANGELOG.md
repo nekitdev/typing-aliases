@@ -2,6 +2,10 @@
 
 <!-- changelogging: start -->
 
+## 1.7.1 (2024-02-26)
+
+No significant changes.
+
 ## 1.7.0 (2024-02-24)
 
 ### Features

@@ -1,3 +1,1 @@
-# Reference
-
-::: typing_aliases.typing
+::: typing_aliases

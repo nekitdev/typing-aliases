@@ -27,7 +27,7 @@ from typing import (
     Union,
 )
 
-from typing_extensions import ParamSpec, TypeGuard
+from typing_extensions import ParamSpec, TypeIs
 
 __all__ = (
     # sets
@@ -146,7 +146,6 @@ __all__ = (
     "is_iterator",
     # none
     "is_none",
-    "is_not_none",
     # builtins
     "is_int",
     "is_float",
@@ -461,7 +460,7 @@ StrictPayload = Union[StrictPrimitive, List["StrictPayload"], StringDict["Strict
 # iterable type guards
 
 
-def is_async_iterable(iterable: AnyIterable[T]) -> TypeGuard[AsyncIterable[T]]:
+def is_async_iterable(iterable: AnyIterable[T]) -> TypeIs[AsyncIterable[T]]:
     """Checks if an [`AnyIterable[T]`][typing_aliases.typing.AnyIterable] is an
     [`AsyncIterable[T]`][typing.AsyncIterable].
 
@@ -474,7 +473,7 @@ def is_async_iterable(iterable: AnyIterable[T]) -> TypeGuard[AsyncIterable[T]]:
     return is_instance(iterable, AsyncIterable)
 
 
-def is_iterable(iterable: AnyIterable[T]) -> TypeGuard[Iterable[T]]:
+def is_iterable(iterable: AnyIterable[T]) -> TypeIs[Iterable[T]]:
     """Checks if an [`AnyIterable[T]`][typing_aliases.typing.AnyIterable] is an
     [`Iterable[T]`][typing.Iterable].
 
@@ -487,7 +486,7 @@ def is_iterable(iterable: AnyIterable[T]) -> TypeGuard[Iterable[T]]:
     return is_instance(iterable, Iterable)
 
 
-def is_async_iterator(iterator: AnyIterator[T]) -> TypeGuard[AsyncIterator[T]]:
+def is_async_iterator(iterator: AnyIterator[T]) -> TypeIs[AsyncIterator[T]]:
     """Checks if an [`AnyIterator[T]`][typing_aliases.typing.AnyIterator] is an
     [`AsyncIterator[T]`][typing.AsyncIterator].
 
@@ -500,7 +499,7 @@ def is_async_iterator(iterator: AnyIterator[T]) -> TypeGuard[AsyncIterator[T]]:
     return is_instance(iterator, AsyncIterator)
 
 
-def is_iterator(iterator: AnyIterator[T]) -> TypeGuard[Iterator[T]]:
+def is_iterator(iterator: AnyIterator[T]) -> TypeIs[Iterator[T]]:
     """Checks if an [`AnyIterator[T]`][typing_aliases.typing.AnyIterator] is an
     [`Iterator[T]`][typing.Iterator].
 
@@ -516,7 +515,7 @@ def is_iterator(iterator: AnyIterator[T]) -> TypeGuard[Iterator[T]]:
 # none
 
 
-def is_none(item: Any) -> TypeGuard[None]:
+def is_none(item: Optional[T]) -> TypeIs[None]:
     """Checks if the given `item` is [`None`][None].
 
     Arguments:
@@ -528,22 +527,10 @@ def is_none(item: Any) -> TypeGuard[None]:
     return item is None
 
 
-def is_not_none(item: Optional[T]) -> TypeGuard[T]:
-    """Checks if the given `item` is *not* [`None`][None].
-
-    Arguments:
-        item: The item to check.
-
-    Returns:
-        Whether the given item is *not* [`None`][None].
-    """
-    return item is not None
-
-
 # builtins
 
 
-def is_int(item: Any) -> TypeGuard[int]:
+def is_int(item: Any) -> TypeIs[int]:
     """Checks if the given item is of type [`int`][int].
 
     Arguments:
@@ -555,7 +542,7 @@ def is_int(item: Any) -> TypeGuard[int]:
     return is_instance(item, int)
 
 
-def is_float(item: Any) -> TypeGuard[float]:
+def is_float(item: Any) -> TypeIs[float]:
     """Checks if the given item is of type [`float`][float].
 
     Arguments:
@@ -567,7 +554,7 @@ def is_float(item: Any) -> TypeGuard[float]:
     return is_instance(item, float)
 
 
-def is_bytes(item: Any) -> TypeGuard[bytes]:
+def is_bytes(item: Any) -> TypeIs[bytes]:
     """Checks if the given item is of type [`bytes`][bytes].
 
     Arguments:
@@ -579,7 +566,7 @@ def is_bytes(item: Any) -> TypeGuard[bytes]:
     return is_instance(item, bytes)
 
 
-def is_string(item: Any) -> TypeGuard[str]:
+def is_string(item: Any) -> TypeIs[str]:
     """Checks if the given item is of type [`str`][str].
 
     Arguments:
@@ -591,7 +578,7 @@ def is_string(item: Any) -> TypeGuard[str]:
     return is_instance(item, str)
 
 
-def is_slice(item: Any) -> TypeGuard[slice]:
+def is_slice(item: Any) -> TypeIs[slice]:
     """Checks if the given item is of type [`slice`][slice].
 
     Arguments:
@@ -603,7 +590,7 @@ def is_slice(item: Any) -> TypeGuard[slice]:
     return is_instance(item, slice)
 
 
-def is_range(item: Any) -> TypeGuard[range]:
+def is_range(item: Any) -> TypeIs[range]:
     """Checks if the given item is of type [`range`][range].
 
     Arguments:
@@ -615,7 +602,7 @@ def is_range(item: Any) -> TypeGuard[range]:
     return is_instance(item, range)
 
 
-def is_true(item: Any) -> TypeGuard[Literal[True]]:
+def is_true(item: Any) -> TypeIs[Literal[True]]:
     """Checks if the given `item` is [`True`][True].
 
     Arguments:
@@ -627,7 +614,7 @@ def is_true(item: Any) -> TypeGuard[Literal[True]]:
     return item is True
 
 
-def is_false(item: Any) -> TypeGuard[Literal[False]]:
+def is_false(item: Any) -> TypeIs[Literal[False]]:
     """Checks if the given `item` is [`False`][False].
 
     Arguments:
@@ -639,7 +626,7 @@ def is_false(item: Any) -> TypeGuard[Literal[False]]:
     return item is False
 
 
-def is_bool(item: Any) -> TypeGuard[bool]:
+def is_bool(item: Any) -> TypeIs[bool]:
     """Checks if the given item is of type [`bool`][bool].
 
     This is equivalent to:
@@ -660,7 +647,7 @@ def is_bool(item: Any) -> TypeGuard[bool]:
 # collections
 
 
-def is_sized(item: Any) -> TypeGuard[Sized]:
+def is_sized(item: Any) -> TypeIs[Sized]:
     """Checks if the given item is sized.
 
     Arguments:
@@ -672,7 +659,7 @@ def is_sized(item: Any) -> TypeGuard[Sized]:
     return is_instance(item, Sized)
 
 
-def is_hashable(item: Any) -> TypeGuard[Hashable]:
+def is_hashable(item: Any) -> TypeIs[Hashable]:
     """Checks if the given item is hashable.
 
     Arguments:
@@ -687,7 +674,7 @@ def is_hashable(item: Any) -> TypeGuard[Hashable]:
 # type guards
 
 
-def is_same_type(item: Any, other: T) -> TypeGuard[T]:
+def is_same_type(item: Any, other: T) -> TypeIs[T]:
     """Checks if the item is of the same type `T` as the other item.
 
     Arguments:
@@ -700,7 +687,7 @@ def is_same_type(item: Any, other: T) -> TypeGuard[T]:
     return type(item) is type(other)
 
 
-def is_same_or_sub_type(item: Any, other: T) -> TypeGuard[T]:
+def is_same_or_sub_type(item: Any, other: T) -> TypeIs[T]:
     """Checks if the item is of the sub- or same type `T` as the other item.
 
     Arguments:

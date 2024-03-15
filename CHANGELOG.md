@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.8.0 (2024-03-15)
+
+### Changes
+
+- `TypeIs` is now used instead of `TypeGuard` for more precise type narrowing.
+
 ## 1.7.1 (2024-02-26)
 
 No significant changes.

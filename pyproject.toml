@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "typing-aliases"
-version = "1.9.0"
+version = "1.9.1"
 description = "Various type aliases."
 authors = ["nekitdev"]
 license = "MIT"
@@ -69,7 +69,7 @@ strict = true
 
 [tool.changelogging]
 name = "typing-aliases"
-version = "1.9.0"
+version = "1.9.1"
 url = "https://github.com/nekitdev/typing-aliases"
 directory = "changes"
 output = "CHANGELOG.md"

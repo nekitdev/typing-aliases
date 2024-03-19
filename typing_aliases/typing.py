@@ -145,6 +145,7 @@ __all__ = (
     "is_iterable",
     "is_async_iterator",
     "is_iterator",
+    "is_reversible",
     # none
     "is_none",
     # builtins

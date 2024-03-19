@@ -20,6 +20,7 @@ from typing import (
     Literal,
     Mapping,
     Optional,
+    Reversible,
     Sized,
     Tuple,
     Type,
@@ -512,19 +513,31 @@ def is_iterator(iterator: AnyIterator[T]) -> TypeIs[Iterator[T]]:
     return is_instance(iterator, Iterator)
 
 
-# none
-
-
-def is_none(item: Optional[T]) -> TypeIs[None]:
-    """Checks if the given `item` is [`None`][None].
+def is_reversible(iterable: Iterable[T]) -> TypeIs[Reversible[T]]:
+    """Checks if the given iterable is reversible.
 
     Arguments:
-        item: The item to check.
+        iterable: The iterable to check.
 
     Returns:
-        Whether the given item is [`None`][None].
+        Whether the given iterable is reversible.
     """
-    return item is None
+    return is_instance(iterable, Reversible)
+
+
+# optional
+
+
+def is_none(optional: Optional[T]) -> TypeIs[None]:
+    """Checks if the `optional` is [`None`][None].
+
+    Arguments:
+        optional: The optional to check.
+
+    Returns:
+        Whether the `optional` is [`None`][None].
+    """
+    return optional is None
 
 
 # builtins

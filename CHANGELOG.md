@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.9.0 (2024-03-19)
+
+### Features
+
+- Added `is_reversible`.
+
 ## 1.8.0 (2024-03-15)
 
 ### Changes

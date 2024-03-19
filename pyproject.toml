@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "typing-aliases"
-version = "1.8.0"
+version = "1.9.0"
 description = "Various type aliases."
 authors = ["nekitdev"]
 license = "MIT"
@@ -35,10 +35,10 @@ python = ">= 3.8"
 typing-extensions = ">= 4.10.0"
 
 [tool.poetry.group.format.dependencies]
-ruff = "0.2.2"
+ruff = "0.3.3"
 
 [tool.poetry.group.check.dependencies]
-mypy = "1.8.0"
+mypy = "1.9.0"
 
 [tool.poetry.group.check.dependencies.pre-commit]
 version = "3.6.2"
@@ -49,17 +49,17 @@ optional = true
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "1.5.3"
-mkdocs-material = "9.5.11"
+mkdocs-material = "9.5.14"
 
 [tool.poetry.group.docs.dependencies.mkdocstrings]
-version = "0.24.0"
+version = "0.24.1"
 extras = ["python"]
 
 [tool.poetry.group.release]
 optional = true
 
 [tool.poetry.group.release.dependencies]
-changelogging = "1.4.1"
+changelogging = "1.4.2"
 
 [tool.ruff]
 line-length = 100
@@ -69,7 +69,7 @@ strict = true
 
 [tool.changelogging]
 name = "typing-aliases"
-version = "1.8.0"
+version = "1.9.0"
 url = "https://github.com/nekitdev/typing-aliases"
 directory = "changes"
 output = "CHANGELOG.md"

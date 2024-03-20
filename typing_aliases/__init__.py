@@ -6,7 +6,7 @@ __url__ = "https://github.com/nekitdev/typing-aliases"
 __title__ = "typing_aliases"
 __author__ = "nekitdev"
 __license__ = "MIT"
-__version__ = "1.9.1"
+__version__ = "1.19.0"
 
 from typing_aliases.typing import (
     AnyAsyncCallable,
@@ -111,6 +111,7 @@ from typing_aliases.typing import (
     is_instance,
     is_int,
     is_iterable,
+    is_iterable_with_iter,
     is_iterator,
     is_none,
     is_range,
@@ -238,6 +239,7 @@ __all__ = (
     # iterable type guards
     "is_async_iterable",
     "is_iterable",
+    "is_iterable_with_iter",
     "is_async_iterator",
     "is_iterator",
     "is_reversible",

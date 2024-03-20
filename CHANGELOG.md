@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.10.0 (2024-03-20)
+
+### Features
+
+- Added `is_iterable_with_iter`.
+
 ## 1.9.1 (2024-03-19)
 
 ### Fixes

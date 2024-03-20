@@ -143,6 +143,7 @@ __all__ = (
     # iterable type guards
     "is_async_iterable",
     "is_iterable",
+    "is_iterable_with_iter",
     "is_async_iterator",
     "is_iterator",
     "is_reversible",
@@ -486,6 +487,26 @@ def is_iterable(iterable: AnyIterable[T]) -> TypeIs[Iterable[T]]:
         Whether the iterable is an [`Iterable[T]`][typing.Iterable].
     """
     return is_instance(iterable, Iterable)
+
+
+def is_iterable_with_iter(iterable: AnyIterable[T]) -> TypeIs[Iterable[T]]:
+    """Checks if an [`AnyIterable[T]`][typing_aliases.typing.AnyIterable] is an
+    [`Iterable[T]`][typing.Iterable] via calling [`iter`][iter] on it.
+
+    Arguments:
+        iterable: The iterable to check.
+
+    Returns:
+        Whether the iterable is an [`Iterable[T]`][typing.Iterable].
+    """
+    try:
+        iter(iterable)  # type: ignore[arg-type]
+
+    except TypeError:
+        return False
+
+    else:
+        return True
 
 
 def is_async_iterator(iterator: AnyIterator[T]) -> TypeIs[AsyncIterator[T]]:

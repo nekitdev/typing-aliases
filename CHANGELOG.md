@@ -2,6 +2,12 @@
 
 <!-- changelogging: start -->
 
+## 1.10.1 (2024-04-22)
+
+### Fixes
+
+- Fixed the version string in the source.
+
 ## 1.10.0 (2024-03-20)
 
 ### Features

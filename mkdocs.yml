@@ -52,8 +52,6 @@ plugins:
             members_order: source
             show_signature_annotations: true
 
-          paths: [typing_aliases]
-
           import:
             - https://docs.python.org/3/objects.inv
 

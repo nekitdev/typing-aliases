@@ -147,9 +147,8 @@ __all__ = (
     "is_async_iterator",
     "is_iterator",
     "is_reversible",
-    # none
-    "is_none",
     # builtins
+    "is_none",
     "is_int",
     "is_float",
     "is_bytes",
@@ -289,7 +288,7 @@ Predicate = Unary[T, bool]
 """Represents predicates `(T) -> bool`."""
 
 GenericPredicate = Callable[P, bool]
-"""Represents generic predicates `(P) -> bool`."""
+"""Represents generic predicates `(**P) -> bool`."""
 
 Compare = Binary[T, U, bool]
 """Represents comparison functions `(T, U) -> bool`."""
@@ -330,7 +329,7 @@ TypeDecoratorIdentity = Identity[C]
 # async functions
 
 AsyncCallable = Callable[P, Awaitable[R]]
-"""Represents async callables `async (P) -> R`."""
+"""Represents async callables `async (**P) -> R`."""
 DynamicAsyncCallable = Callable[..., Awaitable[R]]
 """Represents dynamic async callables `async (...) -> R`."""
 AnyAsyncCallable = DynamicAsyncCallable[Any]
@@ -366,7 +365,7 @@ AsyncPredicate = AsyncUnary[T, bool]
 """Represents async predicates `async (T) -> bool`."""
 
 AsyncGenericPredicate = AsyncCallable[P, bool]
-"""Represents async generic predicates `async (P) -> bool`."""
+"""Represents async generic predicates `async (**P) -> bool`."""
 
 AsyncCompare = AsyncBinary[T, U, bool]
 """Represents async comparison functions `async (T, U) -> bool`."""
@@ -547,22 +546,19 @@ def is_reversible(iterable: Iterable[T]) -> TypeIs[Reversible[T]]:
     return is_instance(iterable, Reversible)
 
 
-# optional
+# builtins
 
 
-def is_none(optional: Optional[T]) -> TypeIs[None]:
-    """Checks if the `optional` is [`None`][None].
+def is_none(item: Any) -> TypeIs[None]:
+    """Checks if the given item is [`None`][None].
 
     Arguments:
-        optional: The optional to check.
+        item: The item to check.
 
     Returns:
-        Whether the `optional` is [`None`][None].
+        Whether the given item is [`None`][None].
     """
-    return optional is None
-
-
-# builtins
+    return item is None
 
 
 def is_int(item: Any) -> TypeIs[int]:
